@@ -1,0 +1,282 @@
+/*清样式*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea,li { 
+    font: 12px "微软雅黑"; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    color:#000;
+}
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+a{
+	text-align: center;
+}
+
+/*顶部样式*/
+.top{
+	width: 100%;
+	height: 64px;
+	background-color: #fff;
+	position:relative;
+}
+.top .heng{
+	margin: 20px 0;
+	height: 24px;
+	float: right;
+}
+.top .heng .more{
+	float: right;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 11px 0 15px;
+	text-align: center;
+	font-weight: 100;
+	width: 60px;
+	color:#fff;
+	background-color: skyblue;
+}
+.top .heng .more .ce{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 86px;
+	height: 900px;
+	border-left: 1px solid #e7e7e7;
+	padding: 0 10px;
+	box-sizing: border-box;
+	background-color: #f9f9f9;
+	text-align: center;
+	display: none;
+}
+.top .heng .more .ce span{
+	width: 36px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.top .heng .more .ce div{
+	border-top: 1px solid #f0f0f0;
+	width: 66px;
+	height: 67px;
+	color:#222;
+	/*margin-top: 10px;*/
+	padding-top: 10px;
+}
+.top .heng .more .ce div:nth-child(1){
+	border: none;
+	width: 66px;
+	height: 29px;
+	margin-top: 20px;
+	padding: 0;
+}
+.top .heng .more .ce div:nth-child(8){
+	width: 66px;
+	height: 60px;
+	text-decoration: underline;
+}
+.top .heng .more .ce a{
+	font: 12 Arial,sans-serif;
+	color:#666;
+	text-decoration: none;
+}
+.top .heng .more .ce a:hover{
+	text-decoration: underline;
+}
+.top .heng .more .ce .nuomi{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: 0 0;
+}
+.top .heng .more .ce .yinyue{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: -36px 0;
+}
+.top .heng .more .ce .tupian{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: -75px 0;
+}
+.top .heng .more .ce .zhidao{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: -112px 0;
+}
+.top .heng .more .ce .wenku{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: -148px 0;
+}
+.top .heng .more .ce .fengyun{
+	background: url(../img/icons_baidu.png) no-repeat;
+	background-position: -185px 0;
+}
+.top .heng .more:hover .ce{
+	display: block;
+}
+.top .heng li{
+	margin: 0 10px;
+	line-height: 24px;
+	font-weight: 900;
+	float: left;
+}
+.top .heng li:nth-child(7){
+	font-weight: 100;
+}
+.top .heng li:nth-child(8){
+	font-weight: 100;
+}
+.top .heng li>a{
+	color:#000;
+}
+.top .heng li>a:hover{
+	color:blue;
+}
+
+
+
+
+.conte{
+	width: 100%;
+	height: 660px;
+	/*background-color: #888;*/
+}
+.conte .logo {	
+	width: 270px;
+	margin: 0 auto;
+	padding-top: 100px
+}
+.conte .logo img{
+	width: 270px;
+}
+.conte .search{
+	width: 650px;
+	height: 37px;
+	background: #fff;
+	margin: 20px auto;
+	position: relative;
+}
+.conte .search input[type=text]{
+	height: 37px;
+	width: 85%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-right: none;
+	padding:0 40px 0 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+.conte .search input[type=text]:hover{
+	border: 1px solid #999;
+	border-right: none;
+}
+.conte .search input[type=text]:focus{
+	border: 1px solid #4791ff;
+	border-right: none;
+}
+.conte .search .wenzi a{
+	display:block;
+	width: 18px;
+	height: 18px;
+	margin: 10px 0 8px;
+	background: url(../img/camera.png) no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 80%;
+}
+.conte .search .wenzi a:hover{
+	background: url(../img/camera.png) no-repeat;
+	background-position: 0 -20px;
+}
+.conte .search input[type=submit]{
+	height: 37px;
+	width: 15%;
+	box-sizing: border-box;
+	border: none;
+	background-color: #3285ff;
+	font: 14px Arial,sans-serif;
+	color:#fff;
+	outline: none;
+}
+.conte .search input[type=submit]:hover{
+	background-color: #317ef3;
+	box-shadow: 1px 1px 2px #dadada;
+}
+.conte .search input[type=submit]:active{
+	background-color: #3075dc;
+	box-shadow: 2px 2px 3px #2b69c5 inset;
+}
+.conte .search .anniu {
+
+}
+
+
+.info{
+	height: 143px;
+}
+.info a{
+	color:#999;
+}
+
+.info .erweima{
+	height: 81px;
+	width: 60px;
+	padding: 0;
+	margin: 0 auto;
+	background: url(../img/baidu_erweima.png) no-repeat;
+
+}
+.info .erweima span{
+	font: 12px Arial,sans-serif;
+	display: block;
+	margin: 0 auto;
+	font-weight: 900;
+	color: #666;
+	padding-top: 69px;
+	width: 26px;
+}
+.info .xinxi{
+	padding-top: 25px;
+}
+.info .lianjie{
+	width: 340px;
+	margin: 0 auto;
+}
+.info .lianjie a{
+	margin-left: 25px;
+}
+.info .lianjie a:nth-child(1){
+	margin-left: 0px;
+}
+.info .xinxi .cp{
+	width: 554px;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+.info .xinxi .cp span{
+	font: 12px ;
+	color: #999;
+}
+.info .xinxi .cp .ga{
+	margin-left: 25px;
+}
+.info .xinxi .cp .ck{
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../img/baidu_icons.png) no-repeat;
+	background-position: -600px -96px;
+}
+.info .xinxi .cp .ga_logo{
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../img/baidu_icons.png) no-repeat;
+	background-position: -623px -96px;
+}
